@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária de Carros</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Concessionária de Carros</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero" class="nav-button">Home</a></li>
+                <li><a href="#destaques" class="nav-button">Destaques</a></li>
+                <li><a href="#servicos" class="nav-button">Serviços</a></li>
+                <li><a href="#depoimentos" class="nav-button">Depoimentos</a></li>
+                <li><a href="#agendamento" class="nav-button">Agendamento</a></li>
+                <li><a href="#contato" class="nav-button">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <h2>Seu próximo carro está aqui!</h2>
+        <p>Descubra uma ampla variedade de carros novos e seminovos com conforto e segurança.</p>
+        <a href="#destaques" class="button">Explore Nossos Carros</a>
+    </section>
+
+    <!-- Destaques Section -->
+    <section id="destaques" class="highlight-section">
+        <h2>Destaques do Mês</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="images/carro01.jpg" alt="Carro Esportivo Vermelho">
+                    <h3>Esportivo Vermelho</h3>
+                    <p>Alta performance e estilo incomparável.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carro02.jpg" alt="SUV de Luxo Azul">
+                    <h3>SUV de Luxo Azul</h3>
+                    <p>Espaço e conforto para toda a família.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carro03.jpg" alt="Carro Elétrico Verde">
+                    <h3>Carro Elétrico Verde</h3>
+                    <p>Eficiência e sustentabilidade ao seu alcance.</p>
+                </div>
+            </div>
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services-section">
+        <h2>Nossos Serviços</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Financiamento</h3>
+                <p>Oferecemos as melhores opções de financiamento para o seu novo carro, com taxas acessíveis e flexibilidade.</p>
+            </div>
+            <div class="service-card">
+                <h3>Seguros</h3>
+                <p>Proteja seu veículo com nossos planos de seguro personalizados, garantindo tranquilidade para você e sua família.</p>
+            </div>
+            <div class="service-card">
+                <h3>Manutenção</h3>
+                <p>Serviços de manutenção especializados para manter seu carro em perfeito estado de funcionamento e segurança.</p>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="testimonials-section">
+        <h2>O Que Nossos Clientes Dizem</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <blockquote>
+                        <p>"Adorei o atendimento e o carro superou minhas expectativas!"</p>
+                        <cite>- João Silva</cite>
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote>
+                        <p>"Ótima experiência, equipe muito atenciosa!"</p>
+                        <cite>- Maria Oliveira</cite>
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote>
+                        <p>"Consegui o financiamento ideal para meu carro novo. Recomendo!"</p>
+                        <cite>- Carlos Pereira</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Agendamento Section -->
+    <section id="agendamento" class="agendamento-section">
+        <h2>Agende sua Revisão</h2>
+        <p>Preencha as informações abaixo e nossa equipe entrará em contato para confirmar.</p>
+        <form id="agendamento-form">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="veiculo">Modelo do Veículo:</label>
+                <input type="text" id="veiculo" name="veiculo" placeholder="Ex.: Toyota Corolla 2022" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data da Revisão:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="horario">Horário da Revisão:</label>
+                <input type="time" id="horario" name="horario" required>
+            </div>
+            <div class="form-group">
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" placeholder="Alguma informação adicional?" rows="4"></textarea>
+            </div>
+            <button type="submit" class="button">Agendar Revisão</button>
+        </form>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact-section">
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo para falar conosco.</p>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" placeholder="Escreva sua mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Concessionária de Carros. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>Assistente Virtual</h3>
+            <button id="chatbot-close" class="chatbot-close">&times;</button>
+        </div>
+        <div class="chatbot-body">
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+            <div class="chatbot-footer">
+                <input type="text" id="chatbot-input" placeholder="Digite sua mensagem...">
+                <button id="chatbot-send" class="chatbot-send">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <button id="chatbot-toggle" class="chatbot-toggle">Chat</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
