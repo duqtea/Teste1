@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoStar - Agendamentos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body id="contato" class="contato">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="carros.html" class="nav-button">Carros</a></li>
+                <li><a href= "agendamentos.html" class="nav-button">Agendamentos</a></li>
+                <li><a href="contato.html" class="nav-button">Contato</a></li>
+                <li><a href="signup.html" class="nav-button">Cadastre-se</a></li>
+                <li><a href="signin.html" class="nav-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="company-name">
+        <h2>AutoStar</h2>
+    </section>
+    <main>
+        <section id="agendamento" class="agendamento-section">
+            <h2>Agende sua Revisão</h2>
+            <p>Preencha as informações abaixo e nossa equipe entrará em contato para confirmar.</p>
+            <form id="agendamento-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="veiculo">Modelo do Veículo:</label>
+                    <input type="text" id="veiculo" name="veiculo" placeholder="Ex.: Toyota Corolla 2022" required>
+                </div>
+                <div class="form-group">
+                    <label for="data">Data da Revisão:</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="form-group">
+                    <label for="horario">Horário da Revisão:</label>
+                    <input type="time" id="horario" name="horario" required>
+                </div>
+                <div class="form-group">
+                    <label for="observacoes">Observações:</label>
+                    <textarea id="observacoes" name="observacoes" placeholder="Alguma informação adicional?" rows="4"></textarea>
+                </div>
+                <button type="submit" class="button">Agendar Revisão</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 AutoStar. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --accent-color: #fdf3e6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+#company-name{
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    padding: 15px;
+}
+
+
+#company-name h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.car-image {
+    width: 300px; /* Defina a largura desejada */
+    height: 150px; /* Defina a altura desejada */
+    object-fit: cover; /* Mantém a proporção da imagem e preenche o espaço */
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 2rem;
+    justify-content: center; /* Centraliza os itens na linha */
+}
+
+.car-item {
+    width: calc(50% - 2rem); /* Define a largura de cada item para 50% menos o espaço do gap */
+    max-width: 300px; /* Define uma largura máxima para os itens */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.car-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.car-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.car-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.car-item p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

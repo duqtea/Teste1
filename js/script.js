@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const chatbotSend = document.getElementById("chatbot-send");
     const chatbotInput = document.getElementById("chatbot-input");
     const chatbotMessages = document.getElementById("chatbot-messages");
-    const whatsappNumber = "5511999999999"; // Substitua pelo número do WhatsApp
+    const whatsappNumber = "+5511967217371"; 
 
     const chatbotMessagesContent = [
         "Olá! Bem-vindo à Concessionária.",
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.open(`https://wa.me/${whatsappNumber}`, "_blank");
             }, 2000);
         } else {
-            showChatMessage("Desculpe, não entendi. Por favor, tente novamente.");
+            showChatMessage("Estamos trabalhando para entender sua mensagem, por favor utilize alguns destes comandos: Digite '1' para dúvidas sobre carros; Digite 2 para falar sobre serviços; Digite 3 para suporte geral.");
         }
 
         chatbotInput.value = "";
@@ -102,51 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
             autoRotateInterval = setInterval(autoRotateCarousel, 5000);
         });
     });
-
-    // ====== GRÁFICO DOS SERVIÇOS ======
-    const servicesChartCanvas = document.getElementById("servicesChart");
-
-    if (servicesChartCanvas) {
-        const ctx = servicesChartCanvas.getContext("2d");
-        new Chart(ctx, {
-            type: "doughnut",
-            data: {
-                labels: ["Financiamento", "Seguros", "Manutenção"],
-                datasets: [
-                    {
-                        label: "Nossos Serviços",
-                        data: [40, 30, 30],
-                        backgroundColor: [
-                            "rgba(54, 162, 235, 0.6)",
-                            "rgba(255, 206, 86, 0.6)",
-                            "rgba(75, 192, 192, 0.6)",
-                        ],
-                        borderColor: [
-                            "rgba(54, 162, 235, 1)",
-                            "rgba(255, 206, 86, 1)",
-                            "rgba(75, 192, 192, 1)",
-                        ],
-                        borderWidth: 1,
-                    },
-                ],
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: "top",
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function (tooltipItem) {
-                                return `${tooltipItem.label}: ${tooltipItem.raw}%`;
-                            },
-                        },
-                    },
-                },
-            },
-        });
-    }
 
     // ====== FORMULÁRIO DE AGENDAMENTO ======
     const agendamentoForm = document.getElementById("agendamento-form");

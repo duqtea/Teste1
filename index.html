@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concessionária de Carros</title>
+    <title>AutoStar - Home</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="images/570b9fec-5f4c-4ab4-af0e-bb05f21600db.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Concessionária de Carros</h1>
         <nav>
             <ul>
-                <li><a href="#hero" class="nav-button">Home</a></li>
-                <li><a href="#destaques" class="nav-button">Destaques</a></li>
-                <li><a href="#servicos" class="nav-button">Serviços</a></li>
-                <li><a href="#depoimentos" class="nav-button">Depoimentos</a></li>
-                <li><a href="#agendamento" class="nav-button">Agendamento</a></li>
-                <li><a href="#contato" class="nav-button">Contato</a></li>
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="carros.html" class="nav-button">Carros</a></li>
+                <li><a href= "agendamentos.html" class="nav-button">Agendamentos</a></li>
+                <li><a href="contato.html" class="nav-button">Contato</a></li>
+                <li><a href="signup.html" class="nav-button">Cadastre-se</a></li>
+                <li><a href="signin.html" class="nav-button">Login</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Company Name Section -->
+    <section class="company-name">
+        <h2>AutoStar</h2>
+    </section>
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <h2>Seu próximo carro está aqui!</h2>
         <p>Descubra uma ampla variedade de carros novos e seminovos com conforto e segurança.</p>
-        <a href="#destaques" class="button">Explore Nossos Carros</a>
+        <a href="carros.html" class="button">Explore Nossos Carros</a>
     </section>
 
     <!-- Destaques Section -->
@@ -34,19 +39,19 @@
         <div class="carousel">
             <div class="carousel-track">
                 <div class="carousel-item">
-                    <img src="images/carro01.jpg" alt="Carro Esportivo Vermelho">
-                    <h3>Esportivo Vermelho</h3>
+                    <img src="images/carro01.png" alt="Civic Type R">
+                    <h3>Civic Type R</h3>
                     <p>Alta performance e estilo incomparável.</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/carro02.jpg" alt="SUV de Luxo Azul">
-                    <h3>SUV de Luxo Azul</h3>
+                    <img src="images/carro2.png" alt="Accord Advanced Hybrid">
+                    <h3>Accord Advanced Hybrid</h3>
                     <p>Espaço e conforto para toda a família.</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/carro03.jpg" alt="Carro Elétrico Verde">
-                    <h3>Carro Elétrico Verde</h3>
-                    <p>Eficiência e sustentabilidade ao seu alcance.</p>
+                    <img src="images/carro3.png" alt="Carro Elétrico Verde">
+                    <h3>Hyundai HB20S</h3>
+                    <p>Um sedan perfeito para os centros urbanos.</p>
                 </div>
             </div>
             <button class="carousel-btn prev">&lt;</button>
@@ -102,73 +107,15 @@
         </div>
     </section>
 
-    <!-- Agendamento Section -->
-    <section id="agendamento" class="agendamento-section">
-        <h2>Agende sua Revisão</h2>
-        <p>Preencha as informações abaixo e nossa equipe entrará em contato para confirmar.</p>
-        <form id="agendamento-form">
-            <div class="form-group">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-            </div>
-            <div class="form-group">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
-            </div>
-            <div class="form-group">
-                <label for="veiculo">Modelo do Veículo:</label>
-                <input type="text" id="veiculo" name="veiculo" placeholder="Ex.: Toyota Corolla 2022" required>
-            </div>
-            <div class="form-group">
-                <label for="data">Data da Revisão:</label>
-                <input type="date" id="data" name="data" required>
-            </div>
-            <div class="form-group">
-                <label for="horario">Horário da Revisão:</label>
-                <input type="time" id="horario" name="horario" required>
-            </div>
-            <div class="form-group">
-                <label for="observacoes">Observações:</label>
-                <textarea id="observacoes" name="observacoes" placeholder="Alguma informação adicional?" rows="4"></textarea>
-            </div>
-            <button type="submit" class="button">Agendar Revisão</button>
-        </form>
-    </section>
-
-    <!-- Contato Section -->
-    <section id="contato" class="contact-section">
-        <h2>Entre em Contato</h2>
-        <p>Preencha o formulário abaixo para falar conosco.</p>
-        <form id="contact-form">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" placeholder="Escreva sua mensagem" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="button">Enviar</button>
-        </form>
-    </section>
-
     <!-- Footer -->
     <footer>
-        <p>© 2024 Concessionária de Carros. Todos os direitos reservados.</p>
+        <p>© 2024 AutoStar. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Chatbot -->
     <div id="chatbot" class="chatbot">
-        <div class="chatbot-header">
-            <h3>Assistente Virtual</h3>
+        <div class="chatbot-header">    
+            <h3>Star</h3>
             <button id="chatbot-close" class="chatbot-close">&times;</button>
         </div>
         <div class="chatbot-body">
@@ -179,7 +126,7 @@
             </div>
         </div>
     </div>
-    <button id="chatbot-toggle" class="chatbot-toggle">Chat</button>
+    <button id="chatbot-toggle" class="chatbot-toggle">Star</button>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/script.js"></script>

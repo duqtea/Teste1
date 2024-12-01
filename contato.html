@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Concessionária de Carros</title>
+    <title>AutoStar - Fale Conosco</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="contato" class="contato">
     <header>
-        <h1>Contato</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="carros.html">Carros</a></li>
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="carros.html" class="nav-button">Carros</a></li>
+                <li><a href= "agendamentos.html" class="nav-button">Agendamentos</a></li>
+                <li><a href="contato.html" class="nav-button">Contato</a></li>
+                <li><a href="signup.html" class="nav-button">Cadastre-se</a></li>
+                <li><a href="signin.html" class="nav-button">Login</a></li>
             </ul>
         </nav>
     </header>
+    <section id="company-name">
+        <h2>AutoStar</h2>
+    </section>
     <main>
-        <section>
+        <section id="contato" class="contact-section">
             <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para falar conosco.</p>
             <form id="contact-form">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Enviar</button>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="button">Enviar</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Concessionária de Carros. Todos os direitos reservados.</p>
+        <p>© 2024 AutoStar. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
